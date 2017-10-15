@@ -1,0 +1,102 @@
+
+//Blue color signal output 
+NET "B_output" LOC = G15;
+NET "B_output" IOSTANDARD = LVTTL;
+NET "B_output" SLEW = FAST;
+NET "B_output" DRIVE = 8;
+
+
+//Green color signal output 
+NET "G_output" IOSTANDARD = LVTTL;
+NET "G_output" SLEW = FAST;
+NET "G_output" LOC = H15;
+NET "G_output" DRIVE = 8;
+
+//Red color signal output 
+NET "R_output" IOSTANDARD = LVTTL;
+NET "R_output" SLEW = FAST;
+NET "R_output" LOC = H14;
+NET "R_output" DRIVE = 8;
+
+//HS signal output
+NET "HS_output" LOC = F15;
+NET "HS_output" IOSTANDARD = LVTTL;
+NET "HS_output" SLEW = FAST;
+NET "HS_output" DRIVE = 8;
+
+//VS signal output
+NET "VS_output" LOC = F14;
+NET "VS_output" IOSTANDARD = LVTTL;
+NET "VS_output" SLEW = FAST;
+NET "VS_output" DRIVE = 8;
+
+//switch 1 (rightmost switch) input
+NET "power_sw" LOC = L13;
+NET "power_sw" IOSTANDARD = LVTTL;
+NET "power_sw" PULLDOWN;
+
+//switch 2(second switch from right) input
+NET "reset_sw_R_input" LOC = L14;
+NET "reset_sw_R_input" IOSTANDARD = LVTTL;
+NET "reset_sw_R_input" PULLDOWN;
+
+//switch 3(second switch from left) input
+NET "carton_G_input_mode" LOC = H18;
+NET "carton_G_input_mode" IOSTANDARD = LVTTL;
+NET "carton_G_input_mode" PULLDOWN;
+
+//Switch 4 input, leftmost switch
+NET "B_input_checkwin" LOC = N17;
+NET "B_input_checkwin" IOSTANDARD = LVTTL;
+NET "B_input_checkwin" PULLDOWN;
+
+//Centre button input
+NET "btnc_change_function" LOC = V16;
+NET "btnc_change_function" IOSTANDARD = LVTTL;
+NET "btnc_change_function" PULLDOWN;
+
+//East(right) button input
+NET "btne_forword_change_color_right" LOC = H13;
+NET "btne_forword_change_color_right" IOSTANDARD = LVTTL;
+NET "btne_forword_change_color_right" PULLDOWN;
+
+//north(up) button input
+NET "btnn_rotate_up" LOC = V4;
+NET "btnn_rotate_up" IOSTANDARD = LVTTL;
+NET "btnn_rotate_up" PULLDOWN;
+
+//south (down) button input
+NET "btns_toggle_color_down" LOC = K17;
+NET "btns_toggle_color_down" IOSTANDARD = LVTTL;
+NET "btns_toggle_color_down" PULLDOWN;
+
+//west(left) button input
+NET "btnw_backward_left" LOC = D18;
+NET "btnw_backward_left" IOSTANDARD = LVTTL;
+NET "btnw_backward_left" PULLDOWN;
+
+
+//System clock input
+NET "Sys_clock" LOC = C9;
+NET "Sys_clock" IOSTANDARD = LVTTL;
+
+
+//First LED signal output
+NET "LED_output[0]" LOC = F12;
+NET "LED_output[0]" IOSTANDARD = LVTTL;
+NET "LED_output[0]" SLEW = SLOW;
+NET "LED_output[0]" DRIVE = 8;
+
+//Second LED signal output
+NET "LED_output[1]" LOC = E12;
+NET "LED_output[1]" IOSTANDARD = LVTTL;
+NET "LED_output[1]" SLEW = SLOW;
+NET "LED_output[1]" DRIVE = 8;
+
+//Third LED signal output 
+NET "LED_output[2]" LOC = E11;
+NET "LED_output[2]" IOSTANDARD = LVTTL;
+NET "LED_output[2]" SLEW = SLOW;
+NET "LED_output[2]" DRIVE = 8;
+
+
